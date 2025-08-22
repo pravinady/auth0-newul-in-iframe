@@ -46,7 +46,7 @@
 
         <!-- The iframe container -->
         <div>
-            <iframe id="webFrame" src="https://auth0-showcase.acmetest.org/authorize?client_id=OcVvNR2kXLXJ8loFliSoosnrdBhtiYjh&response_type=code&redirect_uri=https://jwt.io" allow="publickey-credentials-get; publickey-credentials-create" class="mt-4"></iframe>
+            <iframe id="webFrame" src="https://auth0-showcase.acmetest.org/authorize?client_id=OcVvNR2kXLXJ8loFliSoosnrdBhtiYjh&response_type=id_token&redirect_uri=https://jwt.io&nonce=xyz" allow="publickey-credentials-get; publickey-credentials-create" class="mt-4"></iframe>
         </div>
     </div>
 
@@ -78,7 +78,7 @@
         });
 
         // Set an initial placeholder URL to prevent a blank iframe
-        urlInput.value = 'https://auth0-showcase.acmetest.org/authorize?client_id=OcVvNR2kXLXJ8loFliSoosnrdBhtiYjh&response_type=code&redirect_uri=https://jwt.io';
+        urlInput.value = 'https://auth0-showcase.acmetest.org/authorize?client_id=OcVvNR2kXLXJ8loFliSoosnrdBhtiYjh&response_type=id_token&redirect_uri=https://jwt.io&nonce=xyz';
         loadButton.click();
     </script>
 </body>
